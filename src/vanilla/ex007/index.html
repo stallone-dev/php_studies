@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilização semântica rápida -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <title>EX007 - Basic Form</title>
+</head>
+<body>
+    <header class="container">
+        <h1>EX007 - Basic Form</h1>
+    </header>
+
+    <!--
+        Para integrar com o PHP, os formulários precisam ter METHOD e ACTION sempre bem definidos
+        Os inputs do formulário precisam ter NAME e VALUE
+            METHOD = tipo de requisição HTTP [GET, POST, PUT, DELETE, PATH]
+            ACTION = local/recurso acionado em PHP = [cadastro.php]
+            NAME = nome do elemento = [username]
+            VALUE = valor que o elemento possui no momento da requisição = [one]
+    -->
+
+    <main class="container">
+
+        <form action="cadastro.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="idnome">
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="idsobrenome">
+
+            <input type="submit" value="Registrar">
+        </form>
+
+    </main>
+</body>
+</html>
