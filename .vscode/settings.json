@@ -22,7 +22,7 @@
   },
 
   // Configurações Específicas de Linguagem
-  // PHP: Usa o CS Fixer e desativa validação nativa (para usar Intelephense)
+  // PHP: Usa o CS Fixer e desativa validação nativa
   "[php]": {
     "editor.defaultFormatter": "junstyle.php-cs-fixer",
     "editor.tabSize": 4
@@ -46,16 +46,16 @@
   "[xml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
   // Configuração das Extensões
-  // PHP CS Fixer (Formatador)
+  // PHP CS Fixer
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
   "php-cs-fixer.config": ".php-cs-fixer.dist.php",
   "php-cs-fixer.allowRisky": true,
 
-  // Intelephense (Inteligência de Código)
+  // Intelephense
   "intelephense.environment.phpVersion": "8.2",
   "intelephense.files.maxSize": 5000000,
 
-  // Stubs ajudam o editor a reconhecer funções do Framework e do Docker (Redis, Mongo, etc)
+  // Stubs ajudam o editor a reconhecer funções do Framework e do Docker
   "intelephense.stubs": [
     "apache",
     "bcmath",

@@ -1,23 +1,23 @@
 {
-    "recommendations": [
-        // Core PHP & Debug
-        "bmewburn.vscode-intelephense-client",
-        "xdebug.php-debug",
-        "junstyle.php-cs-fixer",
+  "recommendations": [
+    // Core PHP & Debug
+    "bmewburn.vscode-intelephense-client",
+    "xdebug.php-debug",
+    "junstyle.php-cs-fixer",
 
-        // Infraestrutura (Docker & Banco)
-        "ms-azuretools.vscode-docker",
-        "cweijan.vscode-postgresql-client2",
+    // Infraestrutura
+    "ms-azuretools.vscode-docker",
+    "cweijan.vscode-postgresql-client2",
 
-        // Laravel Específico ---
-        "shufo.vscode-blade-formatter",
-        "amiralizadeh9480.laravel-extra-intellisense",
+    // Laravel Específico
+    "shufo.vscode-blade-formatter",
+    "amiralizadeh9480.laravel-extra-intellisense",
 
-        // --- Utilitários ---
-        "humao.rest-client",
-        "WakaTime.vscode-wakatime",
-        "esbenp.prettier-vscode",
-        "EditorConfig.EditorConfig",
-        "christian-kohler.path-intellisense"
-    ]
+    // Utilitários
+    "humao.rest-client",
+    "WakaTime.vscode-wakatime",
+    "esbenp.prettier-vscode",
+    "EditorConfig.EditorConfig",
+    "christian-kohler.path-intellisense"
+  ]
 }
