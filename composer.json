@@ -1,0 +1,28 @@
+{
+  "name": "stallone-dev/workspace",
+  "description": "Orquestrador do Monorepo de Estudos PHP",
+  "type": "project",
+  "license": "CC0-1.0",
+  "authors": [
+    {
+      "name": "Stallone L.S.",
+      "email": "stallone.developer@gmail.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.0",
+    "phpstan/phpstan": "^1.10"
+  },
+  "scripts": {
+    "fix": "php-cs-fixer fix",
+    "check": "php-cs-fixer fix --dry-run --diff",
+    "analyse:vanilla": "phpstan analyse src/vanilla",
+    "analyse:laravel": "phpstan analyse src/laravel/app"
+  }
+}

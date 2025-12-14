@@ -1,0 +1,34 @@
+{
+  "name": "PHP & Postgres Monorepo",
+
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/var/www/html",
+  "postCreateCommand": "/bin/bash .devcontainer/setup.sh",
+  "shutdownAction": "stopCompose",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "junstyle.php-cs-fixer",
+        "ms-azuretools.vscode-docker",
+        "cweijan.vscode-postgresql-client2",
+        "esbenp.prettier-vscode",
+        "EditorConfig.EditorConfig",
+        "christian-kohler.path-intellisense",
+        "shufo.vscode-blade-formatter",
+        "amiralizadeh9480.laravel-extra-intellisense",
+        "humao.rest-client",
+        "WakaTime.vscode-wakatime"
+      ],
+      "settings": {
+        "php.validate.executablePath": "/usr/local/bin/php",
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+
+  "remoteUser": "root"
+}

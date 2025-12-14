@@ -1,0 +1,148 @@
+{
+  // Comportamento Geral de Edição
+  "editor.formatOnSave": true,
+  "editor.rulers": [120],
+
+  // Performance e Exclusões
+  // Impede o VS Code de vigiar pastas pesadas, economizando CPU
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/vendor/**": true,
+    "**/storage/**": true,
+    "**/public/build/**": true
+  },
+
+  // Esconde arquivos técnicos da árvore lateral
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+
+  // Configurações Específicas de Linguagem
+  // PHP: Usa o CS Fixer e desativa validação nativa (para usar Intelephense)
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer",
+    "editor.tabSize": 4
+  },
+  "php.validate.enable": false,
+  "php.suggest.basic": false,
+  // Blade (Laravel): Usa o formatador específico
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+    "editor.tabSize": 4
+  },
+
+  // Front-end e Configs: Usa Prettier
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[yaml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[xml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  // Configuração das Extensões
+  // PHP CS Fixer (Formatador)
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.config": ".php-cs-fixer.dist.php",
+  "php-cs-fixer.allowRisky": true,
+
+  // Intelephense (Inteligência de Código)
+  "intelephense.environment.phpVersion": "8.2",
+  "intelephense.files.maxSize": 5000000,
+
+  // Stubs ajudam o editor a reconhecer funções do Framework e do Docker (Redis, Mongo, etc)
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "com_dotnet",
+    "Core",
+    "ctype",
+    "curl",
+    "date",
+    "dba",
+    "dom",
+    "enchant",
+    "exif",
+    "fileinfo",
+    "filter",
+    "fpm",
+    "ftp",
+    "gd",
+    "hash",
+    "iconv",
+    "imap",
+    "interbase",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "mcrypt",
+    "meta",
+    "mssql",
+    "mysqli",
+    "oci8",
+    "odbc",
+    "openssl",
+    "pcntl",
+    "pcre",
+    "PDO",
+    "pdo_ibm",
+    "pdo_mysql",
+    "pdo_pgsql",
+    "pdo_sqlite",
+    "pgsql",
+    "Phar",
+    "posix",
+    "pspell",
+    "readline",
+    "recode",
+    "Reflection",
+    "regex",
+    "session",
+    "shmop",
+    "SimpleXML",
+    "snmp",
+    "soap",
+    "sockets",
+    "sodium",
+    "SPL",
+    "sqlite3",
+    "standard",
+    "superglobals",
+    "sybase",
+    "sysvmsg",
+    "sysvsem",
+    "sysvshm",
+    "tidy",
+    "tokenizer",
+    "wddx",
+    "xml",
+    "xmlreader",
+    "xmlrpc",
+    "xmlwriter",
+    "xsl",
+    "Zend OPcache",
+    "zip",
+    "zlib",
+    "redis"
+  ],
+
+  // Blade Formatter
+  "bladeFormatter.format.indentSize": 4,
+
+  // Associações de Arquivos desconhecidos
+  "files.associations": {
+    "*.env": "properties",
+    "*.env.example": "properties",
+    "docker-compose.yml": "yaml",
+    "*.blade.php": "blade"
+  }
+}
