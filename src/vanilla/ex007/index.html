@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Estilização semântica rápida -->
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-    >
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
     <title>EX007 - Basic Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="container">
-        <h1>EX007 - Basic Form</h1>
+      <h1>EX007 - Basic Form</h1>
     </header>
 
     <!--
@@ -25,17 +25,15 @@
     -->
 
     <main class="container">
+      <form action="cadastro.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="idnome" />
 
-        <form action="cadastro.php" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="idnome">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="idsobrenome" />
 
-            <label for="sobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="idsobrenome">
-
-            <input type="submit" value="Registrar">
-        </form>
-
+        <input type="submit" value="Registrar" />
+      </form>
     </main>
-</body>
+  </body>
 </html>

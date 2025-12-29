@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Estilização semântica rápida -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>D01 - Sucessor e antecessor</title>
+  </head>
+  <body>
+    <header class="container">
+      <h1>D01 - Sucessor e antecessor</h1>
+    </header>
+    <main class="container">
+      <form action="calc.php" method="post">
+        <label for="num">Número:</label>
+
+        <input
+          type="number"
+          name="num"
+          inputmode="numeric"
+          pattern="^\d{1,4}$"
+          maxlength="4"
+          placeholder="1231"
+          required
+        />
+        <input type="submit" value="calcular" />
+      </form>
+    </main>
+  </body>
+</html>

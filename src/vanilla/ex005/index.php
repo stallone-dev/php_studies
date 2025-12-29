@@ -34,7 +34,7 @@
                 'isNegativeInteger' => is_int($isNegativeInteger),
                 'isBooleanString' => is_string($isBooleanString),
                 'isIntHex' => is_int($isIntHex),
-                'isScientificFloat' => is_float($isScientificFloat ),
+                'isScientificFloat' => is_float($isScientificFloat),
                 'isNumberString' => is_string($isNumberString),
                 'isObject' => is_object($isObject),
                 'isArray' => is_array($isArray),
